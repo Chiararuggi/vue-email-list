@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
+    <!--axios-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
     <!--vue-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="(email, i) in userEmail" :key="i">
+            {{userEmail[i].email}}
+        </li>
+      </ul>
+    </div>
+    <!--js-->
     <script src="js/main.js"></script>
   </body>
 </html>
